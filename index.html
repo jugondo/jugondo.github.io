@@ -19,6 +19,8 @@
                 justify-content: center;
                 margin: 0;
                 padding: 0rem 1rem;
+                background-size: cover;
+                background-position: center;
             }
 
             h1, h2, h3, h4, h5, h6 {
@@ -35,15 +37,22 @@
                 position: absolute;
                 bottom: 1rem;
                 text-align: center;
+                cursor: pointer; /* Indicate it's clickable */
             }
         </style>
     </head>
     <body>
-        <h1> Você está convidado para a minha festa! Venha de roxo se puder :)</h1>
+        <h1> Você está convidade para a minha festa! Venha de roxo!!!</h1>
         <h2> <a href="https://calendar.app.google/qGjiTRWtqDWJemAH8"> 26/04 - 17:30 (Adicionar no calendar)</a> </h2>
         <h2> <a href="https://maps.app.goo.gl/SrWd9RU4TitT5D2n6">Local: Casita</a> </h2>
-        <footer>
+        <footer onclick="changeBackground()">
             <h4 style="text-decoration: line-through;"> Feito pelos caras </h4>
         </footer>
+
+        <script>
+            function changeBackground() {
+                document.body.style.backgroundImage = "url('dudes.jpg')";
+            }
+        </script>
     </body>
 </html>
